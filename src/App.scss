@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+a {
+  text-decoration: none;
+}
+$fontsize: 1rem;
+@mixin inputprops {
+  border: none;
+  width: 500px;
+  border-bottom: 1px solid #928c8c;
+  height: 43px;
+  font-family:  'FontAwesome', sans-serif;;
+  margin: 30px 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.col {
+  flex-basis:48%;
+}
+article {
+  padding: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin: 15px 0px;
+  border-left: 6px solid #bd9f0d;
+  border-radius: 4px
+}
+input[type="search"] {
+  outline: 0;
+}
+input[type="search"],  input[type="search"]:focus{
+ @include inputprops;
+}
+.newBook {
+  text-align: right;
+}
+ul {
+  margin-left: 10px;
+  li {
+    display: inline-block;
+    width: 50%;
+  }
+}
+.newbooks {
+  text-align: right;
+}
+p {
+  font-size: $fontsize;
+}
+#addbook {
+  width: 80%;
+  margin: auto;
+  input {
+    width: 98%;
+    padding: 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    margin: 15px 0;
+  }
+}
+
+.nav {
+  margin-bottom: 20px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: $fontsize;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
